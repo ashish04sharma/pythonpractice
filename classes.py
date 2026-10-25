@@ -120,7 +120,7 @@ print(Calculator.subtract(20, 10))
 print(Calculator.mult(20, 10))
 print(Calculator.divide(20, 10))
 
- 6. Class attributes
+#  6. Class attributes
 class User:
     users_qty = 0
 
