@@ -119,3 +119,28 @@ print(Calculator.add(20, 10))
 print(Calculator.subtract(20, 10))
 print(Calculator.mult(20, 10))
 print(Calculator.divide(20, 10))
+
+ 6. Class attributes
+class User:
+    users_qty = 0
+
+    def __init__(self, username, email):
+        self.username = username
+        self.email = email
+        User.users_qty += 1
+
+
+first_user = User('bob234', 'bob@bob.com')
+second_user = User('alice356', 'alice@alice.com')
+third_user = User('john324', 'john@john.com')
+
+print(second_user.__dict__)
+print(User.__dict__)
+
+print(User.users_qty)
+print(third_user.users_qty)
+
+third_user.users_qty = 10
+print(User.users_qty)  # 3
+print(third_user.users_qty)  # 10
+print(third_user.__dict__)
