@@ -144,3 +144,5 @@ third_user.users_qty = 10
 print(User.users_qty)  # 3
 print(third_user.users_qty)  # 10
 print(third_user.__dict__)
+
+print(first_user.__dict__)
