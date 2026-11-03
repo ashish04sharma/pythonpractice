@@ -15,3 +15,12 @@ print("<- same line")
 
 # f-strings put variables straight into text
 print(f"{name} is {age} years old")
+
+# Escape characters
+print("Line one\nLine two")
+print("Tab\tseparated")
+print("She said \"hi\"")
+
+# Triple quotes keep line breaks as typed
+print("""Roses are red,
+Python is fun.""")
