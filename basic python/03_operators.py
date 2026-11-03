@@ -30,3 +30,16 @@ print("c -= 4:", c)
 nums = [1, 2, 3, 4]
 print("3 in nums:", 3 in nums)
 print("7 not in nums:", 7 not in nums)
+
+# Identity operators check if two names point to the same object
+p = [1, 2]
+q = p
+r = [1, 2]
+print("q is p:", q is p)
+print("r is p:", r is p)
+print("r == p:", r == p)
+
+# Operator precedence: ** before * before +
+print("2 + 3 * 4 =", 2 + 3 * 4)
+print("(2 + 3) * 4 =", (2 + 3) * 4)
+print("2 ** 3 ** 2 =", 2 ** 3 ** 2)
