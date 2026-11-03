@@ -32,3 +32,21 @@ for i in range(1, 10):
 print("Star pattern:")
 for i in range(1, 5):
     print("*" * i)
+
+# Loop over a string
+for ch in "Python":
+    print(ch, end=" ")
+print()
+
+# for-else: else runs only when the loop was not stopped by break
+for i in range(2, 6):
+    if i == 10:
+        break
+else:
+    print("Loop finished without break")
+
+print("Number triangle:")
+for i in range(1, 5):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
