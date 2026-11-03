@@ -26,3 +26,15 @@ if num > 0:
 # Short if-else on one line
 result = "divisible by 5" if num % 5 == 0 else "not divisible by 5"
 print(num, "is", result)
+
+# Chained comparison
+if 1 <= num <= 100:
+    print(num, "is between 1 and 100")
+
+# Combining conditions with and
+if num % 3 == 0 and num % 5 == 0:
+    print("FizzBuzz")
+elif num % 3 == 0:
+    print("Fizz")
+elif num % 5 == 0:
+    print("Buzz")
