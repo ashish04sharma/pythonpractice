@@ -27,3 +27,18 @@ print("Starts with 'Py':", text.startswith("Py"))
 words = ["learn", "python", "daily"]
 print("Joined:", " ".join(words))
 print("Is digit '123':", "123".isdigit())
+
+# Formatting numbers inside f-strings
+price = 49.5
+print(f"Price: {price:.2f}")
+print(f"Padded: {7:03d}")
+print("Centered:", "hi".center(10, "*"))
+
+# Checking characters
+print("Is alpha 'abc':", "abc".isalpha())
+print("Is upper 'PY':", "PY".isupper())
+
+# Count each letter in a word
+sentence = "banana"
+for letter in sorted(set(sentence)):
+    print(letter, "->", sentence.count(letter))
