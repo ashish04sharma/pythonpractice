@@ -42,3 +42,26 @@ print("Total:", total(1, 2, 3, 4, 5))
 
 square = lambda x: x * x
 print("Lambda square of 8:", square(8))
+
+
+# Keyword arguments can be passed in any order
+def intro(name, city):
+    print(name, "lives in", city)
+
+
+# **kwargs collects named arguments into a dictionary
+def show_info(**details):
+    for key, value in details.items():
+        print(key, "=", value)
+
+
+# Docstring describes what the function does
+def is_even(n):
+    """Return True if n is even."""
+    return n % 2 == 0
+
+
+intro(city="Bangalore", name="Ashish")
+show_info(language="Python", level="beginner")
+print("Is 10 even:", is_even(10))
+print(is_even.__doc__)
