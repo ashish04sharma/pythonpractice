@@ -33,3 +33,20 @@ print("Index of 5:", numbers.index(5))
 
 for index, fruit in enumerate(fruits, start=1):
     print(index, fruit)
+
+# extend adds all items of another list
+fruits.extend(["kiwi", "papaya"])
+print("After extend:", fruits)
+
+# copy makes a separate list
+backup = fruits.copy()
+backup.append("cherry")
+print("Original:", fruits)
+print("Copy:", backup)
+
+# Nested list (2D)
+matrix = [[1, 2, 3], [4, 5, 6]]
+print("Row 2:", matrix[1])
+print("Row 1, column 3:", matrix[0][2])
+
+print("Is mango in list:", "mango" in fruits)
