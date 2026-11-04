@@ -39,3 +39,17 @@ print("name is str:", isinstance(name, str))
 # Capital names are used for values that should not change
 PI = 3.14159
 print("Area of circle with r=2:", PI * 2 ** 2)
+
+# Complex numbers have a real and an imaginary part
+c = 3 + 4j
+print("Complex:", c, "Real:", c.real, "Imaginary:", c.imag)
+
+# Empty and zero values become False
+print("bool(0):", bool(0))
+print("bool(''):", bool(""))
+print("bool(5):", bool(5))
+
+# Same value can be given to many names
+a = b = 100
+print("a and b:", a, b)
+print("Same object:", id(a) == id(b))
