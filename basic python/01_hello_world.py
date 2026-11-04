@@ -24,3 +24,15 @@ print("She said \"hi\"")
 # Triple quotes keep line breaks as typed
 print("""Roses are red,
 Python is fun.""")
+
+# format() is the older way to fill values into text
+print("Name: {}, Age: {}".format(name, age))
+
+# Repeat text with *
+print("=" * 20)
+
+# Raw string keeps the backslash as it is
+print(r"C:\new\test")
+
+# Printing a list without brackets using *
+print(*[1, 2, 3], sep=", ")
